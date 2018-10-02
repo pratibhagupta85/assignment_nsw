@@ -1,4 +1,4 @@
-﻿import { Component, Input } from "@angular/core";
+﻿import { Component, Input, Inject } from "@angular/core";
 
 @Component({
     selector: 'image-tile',
@@ -14,4 +14,5 @@ export class ImageTileComponent {
     img_title: string;
 
     showIframe() { }
+
 }

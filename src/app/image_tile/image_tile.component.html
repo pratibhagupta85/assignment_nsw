@@ -1,7 +1,11 @@
-﻿<div id="image_tile">
-    <img src="{{img_link}}"  height="400" width="400" />
-    <div class="image-info">
-        <p>{{img_title}}</p>
-        <button (click)="showIframe()">View Full size</button>
+﻿<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="{{img_link}}" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+            <p>{{img_title}}</p>
+            <button (click)="showIframe()">View Full size</button>
+        </div>
     </div>
 </div>
