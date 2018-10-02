@@ -1,0 +1,8 @@
+﻿
+<div id="main-container" *ngIf="images" class="main-page"> 
+    <image-container currimages="{{imageContainer[0]}}"></image-container>
+    
+    <image-container *ngFor="let imagesSet of imageContainer" [currimages]="imagesSet"></image-container>
+    <button (click)="addImageContainer()">More</button>
+  
+</div>
